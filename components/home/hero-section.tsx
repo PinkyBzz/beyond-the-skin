@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRight, Sparkles, Heart, Star } from 'lucide-react'
+import { ArrowRight, Sparkles } from 'lucide-react'
 
 export function HeroSection() {
   return (
@@ -102,44 +102,6 @@ export function HeroSection() {
               >
                 Read Stories
               </Link>
-            </div>
-
-            {/* Stats row */}
-            <div className="mt-16 flex flex-wrap items-center gap-12">
-              {[
-                { value: '500+', label: 'Stories Shared', icon: <Sparkles className="h-5 w-5 text-[#F4C244]" /> },
-                { value: '1.2K', label: 'Girls Inspired', icon: <Heart className="h-5 w-5 text-[#E85D75]" /> },
-              ].map((s) => (
-                <motion.div
-                  key={s.label}
-                  whileHover={{ y: -4 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
-                  className="flex items-center gap-3"
-                >
-                  {s.icon}
-                  <div>
-                    <div
-                      style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-                      className="text-3xl font-extrabold text-[#161616]"
-                    >
-                      {s.value}
-                    </div>
-                    <div className="text-xs text-[#787878] mt-1 font-semibold tracking-wide">{s.label}</div>
-                  </div>
-                </motion.div>
-              ))}
-              <div className="h-12 w-px bg-gradient-to-b from-[#161616]/20 to-[#161616]/5" aria-hidden="true" />
-              <motion.div
-                whileHover={{ y: -4 }}
-                transition={{ type: 'spring', stiffness: 300 }}
-                className="flex items-center gap-3"
-              >
-                <Star className="h-5 w-5 text-[#B16FB5]" />
-                <div>
-                  <div style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} className="text-3xl font-extrabold text-[#161616]">6</div>
-                  <div className="text-xs text-[#787878] mt-1 font-semibold tracking-wide">Categories</div>
-                </div>
-              </motion.div>
             </div>
           </motion.div>
 
