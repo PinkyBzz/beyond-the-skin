@@ -93,7 +93,7 @@ export async function LatestStories() {
   return (
     <section aria-labelledby="latest-stories-heading" className="bg-white py-20 lg:py-28 overflow-hidden relative">
       {/* Top Wave Divider */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+      <div className="absolute top-[-1px] left-0 w-full overflow-hidden leading-[0]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-20 md:h-28 lg:h-36">
           <path 
             d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,0 L0,0 Z" 
