@@ -14,7 +14,7 @@ export function HeroSection() {
           scale: [1, 1.05, 1],
           rotate: [0, 2, 0],
         }}
-        transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
+        transition={{ duration: 16, repeat: Infinity, ease: 'easeInOut' }}
         className="absolute -top-24 -right-24 h-96 w-96 blob-shape-1 bg-gradient-to-br from-[#E85D75]/20 to-[#B16FB5]/20 blur-3xl"
         aria-hidden="true"
       />
@@ -23,7 +23,7 @@ export function HeroSection() {
           scale: [1, 1.03, 1],
           rotate: [0, -2, 0],
         }}
-        transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+        transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
         className="absolute -bottom-32 -left-32 h-[28rem] w-[28rem] blob-shape-2 bg-gradient-to-tr from-[#F4C244]/20 to-[#63A8E0]/20 blur-3xl"
         aria-hidden="true"
       />
@@ -50,9 +50,9 @@ export function HeroSection() {
 
           {/* Left — text */}
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 1.2, ease: 'easeOutExpo' }}
             className="py-20 lg:py-0"
           >
             {/* Eyebrow */}
@@ -107,9 +107,9 @@ export function HeroSection() {
 
           {/* Right — editorial visual */}
           <motion.div
-            initial={{ opacity: 0, x: 50, rotate: 2 }}
+            initial={{ opacity: 0, x: 40, rotate: 2 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
-            transition={{ duration: 1, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 1.3, delay: 0.2, ease: 'easeOutExpo' }}
             className="relative hidden lg:flex items-center justify-center"
             aria-hidden="true"
           >
@@ -117,8 +117,8 @@ export function HeroSection() {
             <div className="relative w-80 xl:w-[26rem]">
               {/* Big card */}
               <motion.div
-                whileHover={{ scale: 1.03, rotate: 1 }}
-                transition={{ type: 'spring', stiffness: 300 }}
+                whileHover={{ scale: 1.02, rotate: 0.5 }}
+                transition={{ type: 'spring', stiffness: 200, damping: 20 }}
                 className="blob-shape-1 bg-gradient-to-br from-[#E85D75] to-[#B16FB5] p-10 text-white organic-shadow"
               >
                 <div className="text-xs font-bold tracking-[0.2em] uppercase opacity-80 mb-5 flex items-center gap-2">
@@ -141,8 +141,8 @@ export function HeroSection() {
 
               {/* Floating tag */}
               <motion.div
-                animate={{ y: [0, -10, 0], rotate: [0, 2, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                animate={{ y: [0, -8, 0], rotate: [0, 1.5, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -top-6 -right-8 bg-white rounded-2xl shadow-xl px-5 py-4 border border-black/5"
               >
                 <div className="text-xs font-bold text-[#161616] flex items-center gap-2">
@@ -153,15 +153,15 @@ export function HeroSection() {
 
               {/* Bottom card */}
               <motion.div
-                animate={{ y: [0, 8, 0], rotate: [0, -2, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 0.7 }}
+                animate={{ y: [0, 6, 0], rotate: [0, -1.5, 0] }}
+                transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 0.7 }}
                 className="absolute -bottom-8 -left-10 bg-white rounded-2xl shadow-xl p-5 w-52 border border-black/5"
               >
                 <div className="text-[10px] font-bold text-[#787878] uppercase tracking-[0.15em] mb-2">
                   Community
                 </div>
                 <div className="text-base font-bold text-[#161616]">
-                  1,200+ girls have read this
+                  1,200+ people have read this
                 </div>
               </motion.div>
 

@@ -28,13 +28,13 @@ export function MissionSection() {
         {/* Organic Background Blobs */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <motion.div
-            animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
-            transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
+            animate={{ scale: [1, 1.08, 1], opacity: [0.3, 0.45, 0.3] }}
+            transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
             className="absolute -top-40 -left-40 h-96 w-96 blob-shape-1 bg-gradient-to-br from-[#E85D75]/20 to-[#B16FB5]/20 blur-3xl"
           />
           <motion.div
-            animate={{ scale: [1, 1.08, 1], opacity: [0.25, 0.4, 0.25] }}
-            transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+            animate={{ scale: [1, 1.06, 1], opacity: [0.25, 0.38, 0.25] }}
+            transition={{ duration: 24, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
             className="absolute -bottom-52 -right-52 h-[24rem] w-[24rem] blob-shape-3 bg-gradient-to-tr from-[#F4C244]/20 to-[#63A8E0]/20 blur-3xl"
           />
         </div>
@@ -43,10 +43,10 @@ export function MissionSection() {
           {/* Top row */}
           <div className="grid lg:grid-cols-2 gap-20 items-start mb-24">
             <motion.div
-              initial={{ opacity: 0, y: 32 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1, ease: 'easeOutExpo' }}
             >
               <div className="flex items-center gap-4 mb-8">
                 <div className="h-px w-12 bg-gradient-to-r from-[#E85D75] to-[#B16FB5]" aria-hidden="true" />
@@ -64,10 +64,10 @@ export function MissionSection() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 32 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 1, ease: 'easeOutExpo', delay: 0.15 }}
               className="lg:pt-6"
             >
               <p className="text-[#9F9F9F] text-xl leading-relaxed">
@@ -88,11 +88,11 @@ export function MissionSection() {
             {values.map((v, i) => (
               <motion.div
                 key={v.number}
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: i * 0.1 }}
-                whileHover={{ y: -6, backgroundColor: 'rgba(255,255,255,0.05)' }}
+                transition={{ duration: 0.8, ease: 'easeOutExpo', delay: i * 0.12 }}
+                whileHover={{ y: -4, backgroundColor: 'rgba(255,255,255,0.05)' }}
                 className="bg-[#161616] p-10 transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-5">

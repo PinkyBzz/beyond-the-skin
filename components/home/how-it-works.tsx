@@ -34,7 +34,7 @@ const steps = [
     icon: MessageCircle,
     title: 'Community Responds',
     description:
-      'Girls leave supportive messages. Your story creates ripples of comfort and connection.',
+      'People leave supportive messages. Your story creates ripples of comfort and connection.',
     color: '#C6F4E9',
   },
 ]
@@ -67,10 +67,10 @@ export function HowItWorks() {
       </div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.9, ease: 'easeOutExpo' }}
           className="mx-auto max-w-2xl text-center"
         >
           <h2
@@ -100,10 +100,10 @@ export function HowItWorks() {
             return (
               <motion.div
                 key={step.step}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.8, ease: 'easeOutExpo', delay: index * 0.12 }}
                 className="relative text-center"
               >
                 {/* Connector line */}
