@@ -16,9 +16,9 @@ export function MissionSection() {
     <section aria-labelledby="mission-heading" className="bg-[#161616] overflow-hidden relative">
       {/* Simple Gentle Wave Divider */}
       <div className="absolute top-[-1px] left-0 w-full overflow-hidden leading-[0]">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-20 md:h-28 lg:h-36">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-20 lg:h-28">
           <path 
-            d="M0,60 C300,120 300,0 600,60 C900,120 900,0 1200,60 L1200,0 L0,0 Z" 
+            d="M0,30 C400,110 800,-10 1200,30 L1200,0 L0,0 Z" 
             fill="#FDF9F3"
           />
         </svg>
