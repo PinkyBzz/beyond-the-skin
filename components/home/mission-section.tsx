@@ -18,7 +18,7 @@ export function MissionSection() {
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-20 md:h-28 lg:h-36">
           <path 
-            d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,0 L0,0 Z" 
+            d="M0,60 C300,120 300,0 600,60 C900,120 900,0 1200,60 L1200,0 L0,0 Z" 
             fill="#FDF9F3"
           />
         </svg>
