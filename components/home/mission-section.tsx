@@ -14,11 +14,11 @@ const values = [
 export function MissionSection() {
   return (
     <section aria-labelledby="mission-heading" className="bg-[#161616] overflow-hidden relative">
-      {/* Super Smooth Wave Divider */}
+      {/* Simple Gentle Wave Divider */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-20 md:h-28 lg:h-36">
           <path 
-            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C347.52,33.8,400,59.55,457.3,72.87c52.6,12,103.73,10.85,157.35-1.14C669.15,60.09,723.82,41,783.55,34.13c59.73-6.87,119.47,3.44,168.89,23.62,49.42,20.18,98.84,48.39,166.78,57.48,67.94,9.09,144.52-9.87,200.32-43.23C1165.51,51.75,1182.75,26,1200,0V0H0Z" 
+            d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,0 L0,0 Z" 
             fill="#FDF9F3"
           />
         </svg>

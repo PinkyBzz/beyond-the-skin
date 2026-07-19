@@ -38,7 +38,7 @@ export async function WeeklySpotlight() {
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-20 md:h-28 lg:h-36">
           <path 
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
+            d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,0 L0,0 Z" 
             fill="white"
           />
         </svg>
@@ -48,7 +48,7 @@ export async function WeeklySpotlight() {
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-20 md:h-28 lg:h-36">
           <path 
-            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C347.52,33.8,400,59.55,457.3,72.87c52.6,12,103.73,10.85,157.35-1.14C669.15,60.09,723.82,41,783.55,34.13c59.73-6.87,119.47,3.44,168.89,23.62,49.42,20.18,98.84,48.39,166.78,57.48,67.94,9.09,144.52-9.87,200.32-43.23C1165.51,51.75,1182.75,26,1200,0V0H0Z" 
+            d="M0,60 C300,120 300,0 600,60 C900,120 900,0 1200,60 L1200,120 L0,120 Z" 
             fill="#F3EDFF"
           />
         </svg>
