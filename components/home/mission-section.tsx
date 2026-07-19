@@ -46,7 +46,7 @@ export function MissionSection() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, ease: 'easeOutExpo' }}
+              transition={{ duration: 1, ease: [0.19, 1, 0.22, 1] }}
             >
               <div className="flex items-center gap-4 mb-8">
                 <div className="h-px w-12 bg-gradient-to-r from-[#E85D75] to-[#B16FB5]" aria-hidden="true" />
@@ -67,7 +67,7 @@ export function MissionSection() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1, ease: 'easeOutExpo', delay: 0.15 }}
+              transition={{ duration: 1, ease: [0.19, 1, 0.22, 1], delay: 0.15 }}
               className="lg:pt-6"
             >
               <p className="text-[#9F9F9F] text-xl leading-relaxed">
@@ -91,7 +91,7 @@ export function MissionSection() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: 'easeOutExpo', delay: i * 0.12 }}
+                transition={{ duration: 0.8, ease: [0.19, 1, 0.22, 1], delay: i * 0.12 }}
                 whileHover={{ y: -4, backgroundColor: 'rgba(255,255,255,0.05)' }}
                 className="bg-[#161616] p-10 transition-all duration-300"
               >

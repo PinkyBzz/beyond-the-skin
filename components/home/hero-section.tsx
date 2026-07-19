@@ -52,7 +52,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: 'easeOutExpo' }}
+            transition={{ duration: 1.2, ease: [0.19, 1, 0.22, 1] }}
             className="py-20 lg:py-0"
           >
             {/* Eyebrow */}
@@ -109,7 +109,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, x: 40, rotate: 2 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
-            transition={{ duration: 1.3, delay: 0.2, ease: 'easeOutExpo' }}
+            transition={{ duration: 1.3, delay: 0.2, ease: [0.19, 1, 0.22, 1] }}
             className="relative hidden lg:flex items-center justify-center"
             aria-hidden="true"
           >

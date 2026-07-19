@@ -70,7 +70,7 @@ export function HowItWorks() {
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: 'easeOutExpo' }}
+          transition={{ duration: 0.9, ease: [0.19, 1, 0.22, 1] }}
           className="mx-auto max-w-2xl text-center"
         >
           <h2
@@ -103,7 +103,7 @@ export function HowItWorks() {
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: 'easeOutExpo', delay: index * 0.12 }}
+                transition={{ duration: 0.8, ease: [0.19, 1, 0.22, 1], delay: index * 0.12 }}
                 className="relative text-center"
               >
                 {/* Connector line */}
