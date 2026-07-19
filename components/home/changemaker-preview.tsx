@@ -107,7 +107,7 @@ export async function ChangemakerPreview() {
 
             {winner.nomination_count > 0 && (
               <p className="mt-3 text-sm font-semibold text-[#E8B4F0]">
-                Nominated by {winner.nomination_count} girl{winner.nomination_count !== 1 ? 's' : ''}
+                Nominated by {winner.nomination_count} person{winner.nomination_count !== 1 ? 's' : ''}
               </p>
             )}
 

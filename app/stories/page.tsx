@@ -6,7 +6,7 @@ import type { StoryCategory } from '@/types'
 export const metadata: Metadata = {
   title: 'Behind Every Smile',
   description:
-    'Real stories from real teenage girls. Every story is curated and reviewed before publishing.',
+    'Real stories from real people. Every story is curated and reviewed before publishing.',
 }
 
 async function getCategories(): Promise<StoryCategory[]> {
@@ -37,7 +37,7 @@ export default async function StoriesPage() {
             </span>
           </h1>
           <p className="mt-4 max-w-xl mx-auto text-base text-[#3A3A3A]/70">
-            Every girl who has submitted a story here was brave enough to be honest. These
+            Everyone who has submitted a story here was brave enough to be honest. These
             words are real, curated, and published with love.
           </p>
         </div>

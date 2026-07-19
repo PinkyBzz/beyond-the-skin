@@ -121,7 +121,7 @@ export async function LatestStories() {
               </span>
             </h2>
             <p className="mt-2 text-sm text-[#3A3A3A]/60">
-              Real experiences from real girls — curated with care.
+              Real experiences from real people — curated with care.
             </p>
           </div>
           <Button asChild variant="outline" className="hidden sm:inline-flex">

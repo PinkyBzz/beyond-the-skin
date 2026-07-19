@@ -63,7 +63,7 @@ export default async function ShareStoryPage() {
             </span>
           </h1>
           <p className="mt-4 max-w-lg mx-auto text-base text-[#3A3A3A]/70 leading-relaxed">
-            Every story shared here is a gift to another girl who might need to hear exactly
+            Every story shared here is a gift to someone else who might need to hear exactly
             what you have been through. You are not alone.
           </p>
         </div>

@@ -62,7 +62,7 @@ export function HeroSection() {
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
                 className="text-xs font-bold tracking-[0.2em] uppercase text-[#E85D75]"
               >
-                A safe space for every girl
+                A safe space for everyone
               </span>
             </div>
 
@@ -83,7 +83,7 @@ export function HeroSection() {
               style={{ fontFamily: "'DM Sans', sans-serif" }}
               className="mt-10 text-xl text-[#3F3F3F] leading-relaxed max-w-lg"
             >
-              Every girl deserves to be seen beyond her skin. Share your story,
+              Everyone deserves to be seen beyond their skin. Share your story,
               find strength in others, and discover that real beauty lives within.
             </p>
 

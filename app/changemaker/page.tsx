@@ -8,7 +8,7 @@ import type { ChangemakerWinner } from '@/types'
 export const metadata: Metadata = {
   title: 'Confidence Changemaker',
   description:
-    'Every month, the girl nominated most by her peers for boosting confidence is celebrated here.',
+    'Every month, the person nominated most by their peers for boosting confidence is celebrated here.',
 }
 
 async function getWinners(): Promise<ChangemakerWinner[]> {
@@ -51,7 +51,7 @@ export default async function ChangemakerPage() {
             Confidence Changemaker
           </div>
           <h1 className="text-3xl font-black text-[#3A3A3A] sm:text-4xl lg:text-5xl">
-            Real Girls.{' '}
+            Real People.{' '}
             <span
               style={{
                 background: 'linear-gradient(135deg, #FFF3B0, #FFB6D6)',
@@ -64,7 +64,7 @@ export default async function ChangemakerPage() {
             </span>
           </h1>
           <p className="mt-4 max-w-xl mx-auto text-base text-[#3A3A3A]/70">
-            Every story submission nominates someone who made a girl feel more confident.
+            Every story submission nominates someone who made someone feel more confident.
             The most nominated person each month earns this recognition.
           </p>
         </div>
@@ -123,12 +123,12 @@ export default async function ChangemakerPage() {
             <h2 className="text-2xl font-black text-[#3A3A3A] sm:text-3xl">{currentWinner.name}</h2>
             <p className="text-sm text-[#3A3A3A]/60 mt-1">{currentWinner.school}</p>
             <p className="mt-2 text-sm font-semibold text-[#E8B4F0]">
-              Nominated by {currentWinner.nomination_count} girl{currentWinner.nomination_count !== 1 ? 's' : ''}
+              Nominated by {currentWinner.nomination_count} person{currentWinner.nomination_count !== 1 ? 's' : ''}
             </p>
 
             {/* Reason */}
             <div className="mt-6 max-w-lg mx-auto">
-              <p className="text-sm font-bold text-[#3A3A3A] mb-2">Why she was nominated:</p>
+              <p className="text-sm font-bold text-[#3A3A3A] mb-2">Why they were nominated:</p>
               <blockquote className="text-[#3A3A3A]/70 leading-relaxed italic">
                 &ldquo;{currentWinner.reason}&rdquo;
               </blockquote>
@@ -137,7 +137,7 @@ export default async function ChangemakerPage() {
             {/* Impact */}
             {currentWinner.impact && (
               <div className="mt-5 max-w-lg mx-auto rounded-2xl bg-white/60 p-4">
-                <p className="text-sm font-bold text-[#3A3A3A] mb-1">Her Impact</p>
+                <p className="text-sm font-bold text-[#3A3A3A] mb-1">Their Impact</p>
                 <p className="text-sm text-[#3A3A3A]/70">{currentWinner.impact}</p>
               </div>
             )}

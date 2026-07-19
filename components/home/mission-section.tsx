@@ -8,7 +8,7 @@ const values = [
   { number: '01', title: 'Safe & Confidential', text: 'Every story is reviewed before publishing. Your personal information is never displayed publicly.', icon: <Lock className="h-7 w-7" /> },
   { number: '02', title: 'Curated Storytelling', text: 'Not a social media feed. Every story is thoughtfully read and curated by our team.', icon: <BookOpen className="h-7 w-7" /> },
   { number: '03', title: 'Community Support', text: 'Read supportive messages from the community. Know that you are never alone in your journey.', icon: <Users className="h-7 w-7" /> },
-  { number: '04', title: 'Inspire & Be Inspired', text: 'Every story you share could be the light that another girl needs in her darkest moment.', icon: <Sparkles className="h-7 w-7" /> },
+  { number: '04', title: 'Inspire & Be Inspired', text: 'Every story you share could be the light that someone else needs in their darkest moment.', icon: <Sparkles className="h-7 w-7" /> },
 ]
 
 export function MissionSection() {
@@ -71,13 +71,13 @@ export function MissionSection() {
               className="lg:pt-6"
             >
               <p className="text-[#9F9F9F] text-xl leading-relaxed">
-                Beyond The Skin Project exists to remind every teenage girl that her worth
-                is not defined by her appearance. We create a space where real stories heal,
+                Beyond The Skin Project exists to remind everyone that their worth
+                is not defined by their appearance. We create a space where real stories heal,
                 inspire, and connect — one honest voice at a time.
               </p>
               <blockquote className="mt-10 pl-6 border-l-4 border-[#E85D75]">
                 <p className="text-white italic text-2xl" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-                  &ldquo;When one girl shares her truth, she gives permission to thousands of others to do the same.&rdquo;
+                  &ldquo;When someone shares their truth, they give permission to thousands of others to do the same.&rdquo;
                 </p>
               </blockquote>
             </motion.div>

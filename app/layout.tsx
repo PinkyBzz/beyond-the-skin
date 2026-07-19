@@ -28,18 +28,18 @@ export const metadata: Metadata = {
     template: '%s | Beyond The Skin Project',
   },
   description:
-    'A digital safe space for teenage girls to share stories, learn, inspire one another, and discover that beauty goes beyond the skin.',
-  keywords: ['teenage girls', 'confidence', 'skin care', 'self love', 'stories'],
+    'A digital safe space for everyone to share stories, learn, inspire one another, and discover that beauty goes beyond the skin.',
+  keywords: ['confidence', 'skin care', 'self love', 'stories'],
   openGraph: {
     type: 'website',
     siteName: 'Beyond The Skin Project',
     title: 'Beyond The Skin Project',
-    description: 'Every girl deserves to be seen beyond her skin.',
+    description: 'Everyone deserves to be seen beyond their skin.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Beyond The Skin Project',
-    description: 'Every girl deserves to be seen beyond her skin.',
+    description: 'Everyone deserves to be seen beyond their skin.',
   },
   robots: { index: true, follow: true },
 }
